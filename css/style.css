@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Biryani:wght@200;300;400;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Climate+Crisis&family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&family=League+Gothic&family=Michroma&family=Six+Caps&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+    box-sizing: border-box;
+    }
+    
+    body{
+        background-color: rgb(252, 240, 202);
+        color: rgb(47, 41, 30);
+        margin: 0;
+    }
+
+    .heading svg{
+        background-color: rgb(47, 41, 30); ;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    #nav {
+        overflow: hidden;
+        background-color: rgb(47, 41, 30);
+        border-bottom:1px solid rgb(57, 51, 40);
+        border-top:1px solid rgb(57, 51, 40);
+        z-index: 99;
+        font-family: 'Biryani', sans-serif;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    #nav a{
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        color: rgb(252, 240, 202);
+        text-align: center;
+        text-decoration: none;
+        transition: 0.25s;
+        padding: 16px 40px;
+
+    }
+    #nav a:hover{
+        background-color: rgb(252, 240, 202);
+        color: rgb(47, 41, 30);
+    }
+    #nav-wrapper{
+        width: 80%;
+        max-width: 1600px;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .wrapper {
+    padding-top: 70px;
+  }
+    .wrapper{
+        width: 80%;
+        max-width: 1600px;
+        margin: 5px auto;
+        padding: 15px;
+    }
+
+  /* Container for flexboxes */
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .reverse{flex-direction: row-reverse;}
+    .c-img{
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .c-img:hover{
+        filter: brightness(0.4);
+        transition: all 0.5s;
+    }
+
+    .c-p{
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;       }
+       
+       .carousel-control-next-icon {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+       }
+
+  /* Create four equal columns */
+    .column {
+    flex: 50%;
+    /* padding: 20px; */
+    /* border: 1px solid rgb(57, 51, 40); */
+    }
+
+    .columnleft{
+        border-top:1px solid rgb(57, 51, 40);
+        border-left:1px solid rgb(57, 51, 40);
+    }
+
+    .columnright{
+        border-top:1px solid rgb(57, 51, 40);
+        border-right:1px solid rgb(57, 51, 40);
+    
+    }
+
+    .bottom-line{
+        border-bottom:1px solid rgb(57, 51, 40);
+    }
+
+    .multi-col{
+        flex: 50%;
+        /* border: 1px solid rgb(57, 51, 40); */
+    }
+
+    .noborder{
+        border: 0px;
+        padding-bottom: 160px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .noborder2{
+        border: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+
+    .hero-img{
+        width: 100% 100%;
+        background-image: url(../images/GROUP\ PHOTO-9.5.jpg);
+        height: 80vh;
+        background-size:cover;
+        background-position: center;
+    }
+
+    .hero2{
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    hr{
+        margin: 0;
+        color: rgb(57, 51, 40);
+    }
+
+    .hr{
+        margin: 0;
+        border-top: 1px solid rgb(57, 51, 40);
+    }
+    .item{
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        padding: 0;
+/*         border-top: 1px solid rgb(57, 51, 40);
+        border-right: 1px solid rgb(57, 51, 40); */
+    }
+
+    .item:hover{
+        transition: all 0.5s;
+        background-color: rgb(222, 197, 117);
+    }
+    
+    .item1, .item2{
+        border-right: 1px solid rgb(57, 51, 40);
+        border-bottom: 1px solid rgb(57, 51, 40);
+    }
+
+    .item3, .item4{
+        border-right: 1px solid rgb(57, 51, 40);
+    }
+
+    .item5, .item6{
+        border-left: 1px solid rgb(57, 51, 40);
+        border-bottom: 1px solid rgb(57, 51, 40);
+    }
+
+    .item7, .item8{
+        border-left: 1px solid rgb(57, 51, 40);
+    }
+
+    .item2-h3{
+        padding: 3% 8%;
+    }
+
+    .grid2-p{
+        padding: 3% 8% 8% 8%;
+    }
+
+    .hero-col{
+        padding:6% 4% 4% 4%;
+    }
+
+    .hero-col:hover{
+        transition: all 0.5s;
+        background-color: rgb(222, 197, 117);
+        padding: 6% 3% 3% 3%;
+    }
+
+    .hero-col:not(hover){
+        transition: all 0.5s;
+        padding: 6% 4% 4% 4%;
+    }
+
+/* .wrapper{
+margin: 0 auto;
+width: 80%;
+padding: 15px;
+max-width: 1600px;
+} */
+
+.header{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer{
+    padding-top: 30px;
+    height: 120px;
+    flex: 1;
+}
+
+.main{
+    text-align: left;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.grid-img{
+    width: 100%;
+    /* padding: 8% 8% 2% 8%; */
+}
+
+.grid-img:hover{
+    padding: 5% 5% 2% 5%;
+    transition: all 0.5s;
+}
+
+.grid-img:not(hover){
+    transition: all 0.5s;
+    padding: 8% 8% 2% 8%;;
+}
+
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+h3, .grid-p{
+    padding-left: 20%;
+    margin: 0;
+}
+
+h3{
+    padding-top: 10%;
+}
+
+.main-h3{
+    padding-top: 15%;
+}
+
+h4{
+    font-family: 'Biryani', sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin: 0%;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+h2{
+    font-family: 'Besley', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+h6{
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 200;
+    font-size: 1000px;
+    letter-spacing: 2px;
+    margin: 0;
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+}
+
+p{
+    max-width: 600px;
+    margin: 0;
+    padding-bottom: 10%;
+    text-align: left;
+    /* padding: 15px 10px 10px 10px; */
+}
+
+b{
+    font-family: 'Biryani', sans-serif;
+    font-weight: 500;
+}
+
+
+
+footer{
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .wrapper{
+        width: 95%;
+    }
+    #nav-wrapper{
+        width: 95%;
+    }
+}
+
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+    flex: 100%;
+    }
+
+    .multi-col{
+        flex: 1;
+    }
+
+    img{
+        /* padding: 10%; */
+    }
+
+    h2, .grid-p{
+        /* padding-left: 10%; */
+    }
+
+    .hero-col{
+        /* padding: 5% 5% 0% 5%; */
+        padding: 8%;
+    }
+
+    .hc1, .hc3{
+        border-left: 1px solid rgb(57, 51, 40);
+    }
+
+    .hc2{
+        border-right: 1px solid rgb(57, 51, 40);
+    }
+
+    .noborder{
+        padding-bottom: 60px;
+    }
+
+}
+
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+/*     .row {
+      flex-direction: column;
+    }
+
+    img{
+        padding: 5%;
+    }
+
+    h2, .grid-p{
+        padding: 5%;
+    } */
+    #nav-wrapper{
+        justify-content: space-between;
+    }
+    nav a{
+        width: 100%;
+        padding: 16px 0;
+    }
+    .wrapper{
+        width: 99%;
+    }
+
+    .grid-img{
+        padding: 0px !important;
+    }
+    
+    svg{
+        padding-bottom: 3px;
+        text-align: right;
+    }
+  }
